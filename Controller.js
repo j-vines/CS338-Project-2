@@ -6,6 +6,7 @@ class Controller {
         this.view = view;
         
         this.view.initView();
+        this.view.updateFrog(model.frogPos);
     }
     
     //Need event listener for keyboard movement
