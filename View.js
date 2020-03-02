@@ -15,4 +15,6 @@ class View {
         this.ctx.fillStyle = "blue";
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height); //fill canvas with blue rectangle with origin at (0,0)
     }
+    
+    //TODO: Methods to print frog on canvas at specific coordinates
 }

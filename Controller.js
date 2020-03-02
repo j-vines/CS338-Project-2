@@ -7,4 +7,9 @@ class Controller {
         
         this.view.initView();
     }
+    
+    //Need event listener for keyboard movement
+    
+    //We need animation frame stuff somewhere
+    //Here?
 }
