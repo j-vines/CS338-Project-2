@@ -10,4 +10,5 @@ function main() {
     var frogView = new View();
     
     controller = new Controller(frogModel, frogView);
+    
 }
