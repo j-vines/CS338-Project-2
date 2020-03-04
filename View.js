@@ -1,6 +1,5 @@
 /* View class contains methods to update and display things in canvas element */
 class View {
-
     constructor() {
         console.log("View created.");
         this.canvas = null; //declare canvas class variable
@@ -26,6 +25,4 @@ class View {
     updateFrog(frogPos) {
         this.ctx.drawImage(frog, frogPos.x, frogPos.y, 150, 100);
     }
-    
-    //TODO: Methods to print frog on canvas at specific coordinates
 }
