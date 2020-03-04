@@ -6,15 +6,21 @@ class Controller {
         this.view = view;
         
         this.view.initView();
-        this.view.updateFrog(model.frogPos);
+        this.view.updateFrog(model.frogPos, this.model.frogFaceRight);
         document.addEventListener("keydown", this.checkKey.bind(this));
     }
     
     /* Wrapper method for model's setPos method */
     moveFrog(x, y) {
+        if(x > 0) { //frog moving right, set facing right
+            this.model.frogFaceRight = true;
+        }
+        else if(x < 0) { //frog moving left, set facing left
+            this.model.frogFaceRight = false;
+        } 
         this.model.setPos(x, y);
         this.view.clearScreen();
-        this.view.updateFrog(this.model.frogPos);
+        this.view.updateFrog(this.model.frogPos, this.model.frogFaceRight);
     }
     
     //Event listener for keyboard movement

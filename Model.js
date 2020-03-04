@@ -3,6 +3,7 @@ class Model {
     constructor() {
         console.log("Model created.");
         this.frogPos = {x:10, y:10}; //frog starts at coord (10,10)
+        this.frogFaceRight = true; //frog starts facing right
     }
     
     /* Changes coordinates of frog position */
